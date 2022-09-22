@@ -1,0 +1,76 @@
+<html>
+   <head>
+         <title>Case Study between google lense and mobilenet</title>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+   <body>
+        <center>
+                <h1 class="heading">Case Study</h1>
+               <h2>Google Lense</h2>
+               <img id="image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHoAAAB6CAMAAABHh7fWAAAAw1BMVEX///9ChfTqQzX7vAQ0qFP1+P7/+/PqPS1XkPXqQDL7wzD+9fQ+g/TucWn8yVfsV0w3gPT8wTZxnvb7uAAvfPTt8v6lwPkbdfONsPd4o/a4zfrN3PvpKhOYt/geo0XpLxsAnzr8zmj+9ubxj4n947DpNiXrUET+8dn7vySEq/fn8+qz2buMx5nN5tJht3V6wYvc5vzb7d/63dv3xMHzoZzwhn/vfnb80XT92ZP96ML86un81If1tbH8xUj50tD93Z5NsGVRrmOtAAAD3UlEQVRoge2Y6XaqMBCApYhg1YqCuCFudcelam3Vem/f/6ku6q0mEMgCyDk9+X6Tfp3MZDIxleJwOBwOhxMVufVm+164s0N91H258/G5H2Ui8G52xbY5kO8MhqjvxiKApmml7ms4+6H/ZMrZJ4hsEfXls+hGE489ZnGubw5cXgr1OfgjY+Rf5sDjpVKf7a8s5kIbJaZUi1qXOvBDERkytVrUTpQZXw9lHzOtWhRLVO6Dv5leLT5TuHNFfzODWjyRqwt+eWZUa11S8xeitrM3ZHo18RnLmW6tbLaHxRsF1KJT6cZY07xusiPWdyV68PS+OeQAUIsyAL39x9hl144k5gMctDzYHoj+Y4jepztskiqHg5aHa3rxmdEYVn/il+SgmwpdU0RkTpB7jM/2lwnFzGx23PAdvscuKID7LTPu9pURFDb2bOeGwH63t2HMqdQRrPMSbsfXQDvJDpHniJweuOXaCPP1BlDL/XBmZ1ikSfYWaN/mn7DqPbDj2l/MxzugygYMvQSmB6pxDQ0o8GwxZKpd5wtX4hGrS4D6havDqCuN1qRen7QalceqJUOp6mreQdWriiE9TC3VqqoAoFZrPvKo1U0VEl/kavMRakN3i8/oRvzqFtLsuFvh1cDUi1CjY/aLm0q9u0+9w4JX3fQ1O25vvjOn5xtj4ncAEslTYFCx+R6yCKgFq2vxmaVqkFkQqvGFbQQG7YSNPGGRoASbBUGJy1zB7Lez40F3SRgaASfrit6ISd3CpNpJNqqlRcEkj1PnJzGp63h1/fepE9zwBMsswcOVYEtJsJEmeX0keGkmOCrEOyBNlDtl75+iHAupKF9eUlcURBR0wzCdGmiWKDXdEyBaNdXDJ2I1zXMvajXFIzdyNfnTPgZ1ivAHjXjU0fMb1NOZbduzKcWKuhqJer7oWGc6iznxmgmg1pkraNlJ/9BZki4CexXzfbCw0nesBeEqcPRjvX+XoNlxE8a9gvoU047PO2kYiyzfEjj6sc1ai7Qbwi2HXjfqit48dQft8Ea0Eprz8wzT7czymK0Z0UoJzLWg0rttb9CWTbYUnjpVhXbPUWrCGq/AU0g+b9DVuY3YcMKo3cN2XhdqzYoEELycPddOtj3Dl6qr4IwcvJy9wlO4xyy26r3n+pvUfB7Gw6hZu9kFSQlw48+6u4eTFtmFiuL/swlBm2G7uf6z8o+bpMMBcdPFfKbi6yZqrvOFdeWbIs8/SGWfOifs628ze2nPiE8VjKEjA2e5UqiRas4LIxm1k/GaoLvlD1I7kTfqiq6r6v3Fz3CPsttXDWNSL9+I63dQDofD4XA4PvwD7gVgneesTdYAAAAASUVORK5CYII=">
+               <br>
+               <h1 class="heading">VS</h1>
+               <br>
+               <h2>Mobile Net</h2>
+               <hr>
+               <div class="bg">
+               <img class="images" src="bed.jpeg">
+               <span></span>
+                   </div>
+                   <br><hr>
+                   <div class="bg">
+               <img class="images" src="book.jpeg">
+               <span></span>               
+                   </div>
+                   <br><hr>
+                   <div class="bg">   
+               <img class="images" src="chair.jpeg">
+               <span></span>
+                        </div>
+                        <br><hr>
+                        <div class="bg">
+                    <img class="images" src="glass.jpeg">
+                    <span></span>
+                        </div>
+                        <br><hr>
+                        <div class="bg">
+                    <img class="images" src="glasses.jpeg">
+                    <span></span>
+                    </div>
+                    <br><hr>
+                    <div class="bg">
+                    <img class="images" src="phone.jpeg">
+                    <span></span>
+                    </div>
+                    <br><hr>
+                    <div class="bg">
+                    <img class="images" src="printer.jpeg">
+                     <span></span>
+                     </div>
+                    <br><hr>
+                    <div class="bg">
+                     <img class="images" src="shoes.jpeg">
+                    <span></span>
+                    </div>
+                    <br><hr>
+                    <div class="bg">
+                    <img class="images" src="switchboard.jpeg">
+                    <span></span>
+                    </div>
+                     <br><hr>
+                     <div class="bg">
+                    <img class="images" src="waterbottle.jpeg">
+                     <span></span>
+                    </div>
+                    <br><hr>
+        </center>            
+   </body>
+</html>
